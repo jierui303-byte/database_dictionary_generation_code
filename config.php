@@ -1,6 +1,6 @@
 <?php
 return [
-	'host'=>'127.0.0.1',
+	'host'=>'192.168.0.125',
 	'user'=>'root',
-	'password'=>'123456',
+	'password'=>'888888',
 ];

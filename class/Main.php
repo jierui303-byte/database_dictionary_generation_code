@@ -108,7 +108,8 @@ class Main{
         
         ob_start();
         //加载模板
-        $this->view('template_download',['data'=>$data,'database'=>$file]);
+        //$this->view('template_download',['data'=>$data,'database'=>$file]);
+        $this->view('template',['data'=>$data,'database'=>$file]);
         $content=ob_get_contents();
         ob_clean();
 
