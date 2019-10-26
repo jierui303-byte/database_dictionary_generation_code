@@ -9,3 +9,4 @@ composer.phar
 
 /runtime/**/*.log
 /runtime/**/*.php
+/config.php
