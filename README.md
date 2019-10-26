@@ -5,6 +5,8 @@ MySQL数据字典生成工具
 
 #### 软件架构
 没有啥子架构，纯手写，文件操作数据库操作都是自己简单封装的。
+https://gitee.com/dazhaozhao/dictionary.git 
+在原包上进行了页面结构展示的修改, 借用别人的git包
 
 
 #### 安装教程
