@@ -43,6 +43,7 @@ body {font-family: '微软雅黑'}
                 <th>字段名称</th>
                 <th>字段备注</th>
                 <th>字段类型</th>
+                <th>字段索引</th>
                 <th>字段默认值</th>
                 <th>字段编码</th>
             </tr>
@@ -51,6 +52,19 @@ body {font-family: '微软雅黑'}
                     <td><?php echo $v['COLUMN_NAME']; ?></td>
                     <td><?php echo $v['COLUMN_COMMENT']; ?></td>
                     <td><?php echo $v['COLUMN_TYPE']; ?></td>
+                    <td><?php switch($v['COLUMN_KEY']){
+                            case 'PRI':
+                                echo $v['COLUMN_KEY'].'主键索引, 主键约束';
+                                break;
+                            case 'UNI':
+                                echo $v['COLUMN_KEY'].'唯一索引, 唯一约束';
+                                break;
+                            case 'MUL':
+                                echo $v['COLUMN_KEY'].'一般索引, 可以重复';
+                                break;
+                            default:
+                                break;
+                        } ?></td>
                     <td align="center"><?php echo $v['COLUMN_DEFAULT']; ?></td>
                     <td align="center"><?php echo $v['COLLATION_NAME']; ?></td>
                 </tr>
