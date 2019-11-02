@@ -41,7 +41,7 @@ body {font-family: '微软雅黑'}
             </colgroup>
             <tr>
                 <th>字段名称</th>
-                <th>字段备注</th>
+                <th style="width: 40%;">字段备注</th>
                 <th>字段类型</th>
                 <th>字段索引</th>
                 <th>字段默认值</th>
